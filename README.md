@@ -43,13 +43,6 @@ This is my personal portfolio website featuring:
 - **References** - Professional contacts
 - **Contact** - Get in touch
 
-## Contact
-
-- **Email:** nastaran.esmz@gmail.com
-- **Phone:** +60 172153840
-- **LinkedIn:** [Nastaran Esmaeilzadeh](https://www.linkedin.com/in/nastaran-esmaeilzadeh/)
-- **GitHub:** [NASTARAN-ESZ](https://github.com/NASTARAN-ESZ)
-
 ---
 
 © 2026 Nastaran Esmaeil Zadeh. All rights reserved.
