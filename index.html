@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nastaran Esmaeil Zadeh - AI & Web Developer | Computer Science Graduate with expertise in full-stack development, AI systems, and UI/UX design">
+    <meta name="keywords"
+        content="AI Developer, Web Developer, Full-Stack, UI/UX Design, Computer Science, Python, Machine Learning">
+    <meta name="author" content="Nastaran Esmaeil Zadeh">
+    <title>Nastaran Esmaeil Zadeh | AI & Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <span class="logo-name gradient-text">NZ</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#publications" class="nav-link">Publications</a>
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                    <a href="#references" class="nav-link">References</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+
+                    <h1 class="hero-title">
+                        <span class="title-line">Nastaran</span>
+                        <span class="title-line gradient-text">Esmaeil Zadeh</span>
+                    </h1>
+                    <p class="hero-subtitle">AI & Web Developer</p>
+                    <p class="hero-description">
+                        Computer Science graduate specializing in full-stack web development,
+                        AI-assisted systems, and UI/UX design. Passionate about creating
+                        innovative solutions that make a real-world impact.
+                    </p>
+
+
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="cv-dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="cvDropdownBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3V13M10 13L6 9M10 13L14 9M3 17H17" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Download CV</span>
+                                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu" id="cvDropdownMenu">
+                                <a href="Nastaran_CV.pdf" download class="dropdown-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                                        <polyline points="9 15 12 18 15 15"></polyline>
+                                    </svg>
+                                    <span>CV</span>
+                                </a>
+                                <a href="Nastaran_EuropassCV.pdf" download class="dropdown-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    <span>Europass CV</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Graduate computer scientist who has been working in practice in research-driven software
+                        development,
+                        AI-assisted systems, and intelligent web applications. Designed and implemented end-to-end
+                        systems
+                        and design on healthcare-related and business-oriented projects, such as a web-based insulin
+                        management system and analytical systems based on SEO.
+                    </p>
+                    <p class="about-description">
+                        Passion to study engineering in research, data modeling and system optimization with backup of
+                        academic research and publication oriented work. Creates a combination of technical, analytical
+                        and
+                        leadership background.
+                    </p>
+
+                </div>
+                <div class="education-timeline">
+                    <h3 class="timeline-title">Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023 - 2026</div>
+                                <h4 class="timeline-heading">Bachelor of Computer Science (General)</h4>
+                                <p class="timeline-text">Asia Pacific University</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M4 28H28M8 16H24M8 16V28M24 16V28M12 4H20L24 16H8L12 4Z" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="card-title-group">
+                            <h3 class="card-title">Web Development Intern</h3>
+                            <p class="card-subtitle">Rose Attractions | Jan 2025 – May 2025</p>
+                        </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Developed and maintained website pages using Drupal and WordPress</li>
+                        <li>Designed and developed the <a
+                                href="https://roseattractions.com/our-services/seo-consultants" target="_blank"
+                                rel="noopener noreferrer">SEO Consultants service page for Rose Attractions</a></li>
+                        <li>Contributed to the development and content structuring of the homepage</li>
+                        <li>Built responsive landing pages with focus on UI/UX and performance</li>
+                        <li>Set up and configured Google Analytics for website performance tracking</li>
+                        <li>Performed on-page SEO optimizations including metadata, content structure, and usability
+                        </li>
+                        <li>Conducted keyword research and competitor analysis to support SEO strategies</li>
+                        <li>Collaborated with the marketing team to enhance overall digital presence</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M28 10H4M28 10V24C28 25.1046 27.1046 26 26 26H6C4.89543 26 4 25.1046 4 24V10M28 10V8C28 6.89543 27.1046 6 26 6H6C4.89543 6 4 6.89543 4 8V10M20 16H12"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="card-title-group">
+                            <h3 class="card-title">Pharmacy Clerk</h3>
+                            <p class="card-subtitle">2021 - 2022</p>
+                        </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Ensured accuracy in filing, paperwork, and data entry</li>
+                        <li>Managed administrative tasks with attention to detail</li>
+                        <li>Maintained organized records and documentation systems</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering Jobs Section -->
+    <section id="volunteering" class="section experience-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Volunteering Jobs</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <path d="M16 12V16L19 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="card-title-group">
+                            <h3 class="card-title">President — Iranian Cultural Club (ICC)</h3>
+                            <p class="card-subtitle">Asia Pacific University</p>
+                        </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Founder and first President of the Iranian Cultural Club at APU</li>
+                        <li>Lead cultural events, manage team activities, and represent Iranian students on campus</li>
+                        <li>Responsible for planning, organizing, and executing community-focused cultural programs</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4 22L16 28L28 22M4 16L16 22L28 16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="card-title-group">
+                            <h3 class="card-title">Food Sorter — The Lost Food Project</h3>
+                            <p class="card-subtitle">Volunteer</p>
+                        </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Sorted donated vegetables and produce, ensuring only fresh and safe items were prepared for
+                            distribution</li>
+                        <li>Contributed to reducing food waste and supporting local communities in need</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Academic Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-badge">Featured Project</div>
+                    <div class="project-content">
+                        <h3 class="project-title">InsuSmart – Web-Based Insulin Management System</h3>
+                        <p class="project-subtitle">Final Year Project (FYP)</p>
+                        <p class="project-description">
+                            A comprehensive full-stack web-based insulin management system designed to help
+                            healthcare providers and patients manage insulin inventory efficiently.
+                        </p>
+                        <ul class="project-features">
+                            <li>Implemented inventory control, low-stock and expiry monitoring</li>
+                            <li>Designed database schema and role-based access control (RBAC)</li>
+                            <li>Built a responsive, user-centric UI/UX</li>
+                            <li>Applied AI-assisted development and conducted system testing</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">AI-Assisted</span>
+                        </div>
+
+                        <!-- Project Image Gallery -->
+                        <div class="project-gallery">
+                            <div class="gallery-carousel">
+                                <div class="carousel-track">
+                                    <img src="Featured%20Project/featured-1.png" alt="InsuSmart Dashboard"
+                                        class="carousel-image">
+                                    <img src="Featured%20Project/featured-2.png" alt="Inventory Management"
+                                        class="carousel-image">
+                                    <img src="Featured%20Project/featured-3.png" alt="User Interface"
+                                        class="carousel-image">
+                                    <img src="Featured%20Project/featured-4.png" alt="Analytics View"
+                                        class="carousel-image">
+                                </div>
+                                <button class="carousel-btn prev-btn" aria-label="Previous image">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="carousel-btn next-btn" aria-label="Next image">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">SEO Consultancy Website Enhancement</h3>
+                        <p class="project-subtitle">Rose Attractions Marketing</p>
+                        <p class="project-description">
+                            Developed multiple landing pages and content sections for RA Marketing's website,
+                            improving page responsiveness and layout consistency.
+                        </p>
+                        <ul class="project-features">
+                            <li>Developed multiple landing pages and content sections</li>
+                            <li>Improved page responsiveness and layout consistency using HTML/CSS</li>
+                            <li>Created and published content through Drupal CMS</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Drupal</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Deep Learning Based Sentiment Analysis Project</h3>
+                        <p class="project-subtitle">Academic Project</p>
+                        <p class="project-description">
+                            Developed an end-to-end sentiment analysis system for social media text classification using
+                            deep learning techniques.
+                        </p>
+                        <ul class="project-features">
+                            <li>Designed and trained LSTM-based deep learning models for natural language processing
+                            </li>
+                            <li>Performed data preprocessing, model optimization, and evaluation using standard
+                                classification metrics</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">LSTM</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 15L20 5L35 15M5 15V30L20 40L35 30V15M5 15L20 25M35 15L20 25M20 25V40"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Full-Stack Web Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python & MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design & Responsive Web Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path
+                                d="M20 5V35M20 5C15 5 10 8 10 15C10 22 15 25 20 25M20 5C25 5 30 8 30 15C30 22 25 25 20 25M20 25C15 25 10 28 10 35M20 25C25 25 30 28 30 35"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="category-title">AI & Innovation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AI-Assisted Development & Prompt Engineering</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Machine Learning (Academic Level)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path
+                                d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M20 15L25 20L20 25M15 20H25" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Research Writing & Analytical Thinking</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Problem Solving & Critical Thinking</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Leadership & Team Collaboration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Research & Publications</span>
+                <h2 class="section-title">Publications</h2>
+            </div>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-type">Journal Article</div>
+                    <h3 class="publication-title">
+                        Overcoming bushfire challenges via machine learning techniques and enhanced training data in
+                        Australia
+                    </h3>
+                    <p class="publication-authors">Jokanian, S., Esmaeil Zadeh, N.</p>
+                    <p class="publication-venue">
+                        Manuscript submitted to <em>Natural Hazards</em> (Springer Nature), December 2025
+                    </p>
+                    <div class="publication-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Environmental Science</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-type">In Preparation</div>
+                    <h3 class="publication-title">
+                        iInsuSmart: A Web-Based System for Optimizing Insulin Dispensing and Monitoring for Pharmacies
+                    </h3>
+                    <p class="publication-authors">Esmaeil Zadeh, N.</p>
+                    <p class="publication-venue">
+                        In preparation (2026)
+                    </p>
+                    <div class="publication-tags">
+                        <span class="tag">Healthcare Technology</span>
+                        <span class="tag">Web Development</span>
+                        <span class="tag">AI Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates</h2>
+            </div>
+            <div class="certificates-carousel">
+                <div class="certificates-track">
+                    <div class="certificate-card">
+                        <div class="certificate-image-wrapper">
+                            <img src="Certificates/WhatsApp%20Image%202026-02-09%20at%2018.00.16.jpeg"
+                                alt="Certificate 1" class="certificate-image">
+                            <div class="certificate-overlay">
+                                <button class="view-btn">View Full Certificate</button>
+                            </div>
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">Web Design Pack Certificate</h3>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-image-wrapper">
+                            <img src="Certificates/WhatsApp%20Image%202026-02-09%20at%2018.31.08.jpeg"
+                                alt="Certificate 2" class="certificate-image">
+                            <div class="certificate-overlay">
+                                <button class="view-btn">View Full Certificate</button>
+                            </div>
+                        </div>
+                        <div class="certificate-info">
+                            <h3 class="certificate-title">Overreliance of AI in Education</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn cert-prev-btn" aria-label="Previous certificate">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="carousel-btn cert-next-btn" aria-label="Next certificate">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="carousel-dots" id="cert-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section references-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">References</h2>
+            </div>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path
+                                d="M24 24C29.5228 24 34 19.5228 34 14C34 8.47715 29.5228 4 24 4C18.4772 4 14 8.47715 14 14C14 19.5228 18.4772 24 24 24Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M4 44C4 35.1634 11.1634 28 20 28H28C36.8366 28 44 35.1634 44 44"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="reference-name">Shahab Alizadeh</h3>
+                    <p class="reference-position">Senior Lecturer</p>
+                    <p class="reference-org">Asia Pacific University</p>
+                    <a href="mailto:shahab.alizadeh@apu.edu.my" class="reference-email">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M3 6L9.225 10.01C9.6498 10.3197 10.1599 10.4874 10.6833 10.4874C11.2068 10.4874 11.7169 10.3197 12.1417 10.01L18.3667 6M5 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V7C17 6.46957 16.7893 5.96086 16.4142 5.58579C16.0391 5.21071 15.5304 5 15 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V15C3 15.5304 3.21071 16.0391 3.58579 16.4142C3.96086 16.7893 4.46957 17 5 17Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        shahab.alizadeh@apu.edu.my
+                    </a>
+                </div>
+
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path
+                                d="M24 24C29.5228 24 34 19.5228 34 14C34 8.47715 29.5228 4 24 4C18.4772 4 14 8.47715 14 14C14 19.5228 18.4772 24 24 24Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M4 44C4 35.1634 11.1634 28 20 28H28C36.8366 28 44 35.1634 44 44"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="reference-name">Vijayaraj C. Vijayasingam</h3>
+                    <p class="reference-position">Senior Lecturer</p>
+                    <p class="reference-org">Asia Pacific University</p>
+                    <a href="mailto:vijayaraj@apu.edu.my" class="reference-email">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M3 6L9.225 10.01C9.6498 10.3197 10.1599 10.4874 10.6833 10.4874C11.2068 10.4874 11.7169 10.3197 12.1417 10.01L18.3667 6M5 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V7C17 6.46957 16.7893 5.96086 16.4142 5.58579C16.0391 5.21071 15.5304 5 15 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V15C3 15.5304 3.21071 16.0391 3.58579 16.4142C3.96086 16.7893 4.46957 17 5 17Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        vijayaraj@apu.edu.my
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M4 10L14.225 17.01C14.6498 17.3197 15.1599 17.4874 15.6833 17.4874C16.2068 17.4874 16.7169 17.3197 17.1417 17.01L27.3667 10M6.66667 25.3333H25.3333C26.0406 25.3333 26.7189 25.0524 27.219 24.5523C27.719 24.0522 28 23.3739 28 22.6667V9.33333C28 8.62609 27.719 7.94781 27.219 7.44772C26.7189 6.94762 26.0406 6.66667 25.3333 6.66667H6.66667C5.95942 6.66667 5.28115 6.94762 4.78105 7.44772C4.28095 7.94781 4 8.62609 4 9.33333V22.6667C4 23.3739 4.28095 24.0522 4.78105 24.5523C5.28115 25.0524 5.95942 25.3333 6.66667 25.3333Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Email</h3>
+
+                        <a href="mailto:nastaran.esmz@gmail.com" class="contact-link">nastaran.esmz@gmail.com</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M4 6.66667C4 5.19391 5.19391 4 6.66667 4H11.039C11.6129 4 12.1224 4.36724 12.3039 4.91169L14.3009 10.903C14.5108 11.5324 14.2259 12.2204 13.6324 12.5171L10.6227 14.0219C12.0923 17.2816 14.7184 19.9077 17.9781 21.3773L19.4829 18.3676C19.7796 17.7741 20.4676 17.4892 21.097 17.699L27.0883 19.6961C27.6328 19.8776 28 20.3871 28 20.961V25.3333C28 26.8061 26.8061 28 25.3333 28H24C12.9543 28 4 19.0457 4 8V6.66667Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Phone</h3>
+
+                        <a href="tel:+60172153840" class="contact-link">+60 172153840</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M16 4C12.8355 4 9.74207 4.93808 7.11091 6.69649C4.47975 8.4549 2.42894 10.9544 1.21793 13.8776C0.00693254 16.8008 -0.309921 20.0177 0.307443 23.1214C0.924808 26.2251 2.44866 29.0761 4.6863 31.3137C6.92394 33.5513 9.77487 35.0752 12.8786 35.6926C15.9823 36.3099 19.1992 35.9931 22.1224 34.7821C25.0456 33.5711 27.5451 31.5203 29.3035 28.8891C31.0619 26.2579 32 23.1645 32 20C32 17.8783 31.5811 15.7774 30.7821 13.8276C29.9831 11.8778 28.8222 10.1192 27.3637 8.66074C25.9052 7.20229 24.1466 6.04138 22.1968 5.24236C20.247 4.44335 18.1461 4.02447 16.0244 4.02447L16 4ZM16 29.3333C14.2311 29.3333 12.4978 28.8089 10.9999 27.8181C9.50199 26.8273 8.30072 25.4107 7.53545 23.7385C6.77018 22.0663 6.47253 20.2089 6.67465 18.3865C6.87677 16.5641 7.56989 14.8474 8.66667 13.4133L23.5867 28.3333C21.9289 28.9778 19.1378 29.3333 16 29.3333ZM25.3333 26.6667L5.33333 6.66667C7.55556 5.11111 10.6667 4 16 4C19.5362 4 22.9276 5.40476 25.4281 7.90524C27.9286 10.4057 29.3333 13.7971 29.3333 17.3333C29.3333 22.6667 28.2222 25.7778 26.6667 28L25.3333 26.6667Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">LinkedIn</h3>
+
+                        <a href="https://www.linkedin.com/in/nastaran-esmaeilzadeh/" target="_blank"
+                            rel="noopener noreferrer" class="contact-link">Nastaran Esmailzadeh</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 4C9.37258 4 4 9.37258 4 16C4 21.3031 7.43806 25.7925 12.2056 27.4866C12.8056 27.5981 13.025 27.2387 13.025 26.9244C13.025 26.6419 13.015 25.9494 13.01 25.0106C9.67188 25.7294 8.96875 23.4831 8.96875 23.4831C8.42188 22.0106 7.63438 21.6525 7.63438 21.6525C6.54563 20.9156 7.71688 20.9306 7.71688 20.9306C8.92063 21.0156 9.55563 22.1494 9.55563 22.1494C10.6269 23.9644 12.3644 23.4344 13.0469 23.1294C13.1569 22.3556 13.4669 21.8256 13.8094 21.5281C11.1456 21.2281 8.34375 20.2031 8.34375 15.4706C8.34375 14.0694 8.81063 12.9244 9.57938 12.0244C9.45438 11.7244 9.04313 10.5169 9.69813 8.88938C9.69813 8.88938 10.7044 8.57063 12.9981 10.0956C13.9544 9.83063 14.9794 9.69813 16.0019 9.69313C17.0244 9.69813 18.0494 9.83063 19.0069 10.0956C21.2994 8.57063 22.3044 8.88938 22.3044 8.88938C22.9606 10.5169 22.5494 11.7244 22.4244 12.0244C23.1944 12.9244 23.6594 14.0694 23.6594 15.4706C23.6594 20.2144 20.8531 21.2256 18.1831 21.5206C18.6106 21.8906 18.9931 22.6219 18.9931 23.7394C18.9931 25.3519 18.9794 26.6494 18.9794 26.9244C18.9794 27.2406 19.1956 27.6019 19.8044 27.4856C24.5681 25.7894 28 21.3019 28 16C28 9.37258 22.6274 4 16 4Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">GitHub</h3>
+
+                        <a href="https://github.com/NASTARAN-ESZ" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">NASTARAN-ESZ</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nastaran Esmaeil Zadeh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Full size image">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
